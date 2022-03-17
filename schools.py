@@ -51,16 +51,16 @@ for school in list_of_univ:
 
 
 for univ in m1schools:
-    tote = univ["Total  enrollment (DRVEF2020)"]
-    wom = univ["Graduation rate  women (DRVGR2020)"]
     lon = univ["Longitude location of institution (HD2020)"]
     lat = univ["Latitude location of institution (HD2020)"]
+    tote = univ["Total  enrollment (DRVEF2020)"]
     title = univ["instnm"]
+    wom = univ["Graduation rate  women (DRVGR2020)"]
     lons.append(lon)
     lats.append(lat)
     tot_e.append(tote)
-    m1.append(wom)
     hover_texts.append(title)
+    m1.append(wom)
 
 
 from plotly.graph_objs import Scattergeo, Layout
@@ -111,18 +111,18 @@ for school in list_of_univ:
 
 
 for univ in m2schools:
+    lon = univ["Longitude location of institution (HD2020)"]
+    lat = univ["Latitude location of institution (HD2020)"]
     tote = univ["Total  enrollment (DRVEF2020)"]
+    title = univ["instnm"]
     m_2 = univ[
         "Percent of total enrollment that are Black or African American (DRVEF2020)"
     ]
-    lon = univ["Longitude location of institution (HD2020)"]
-    lat = univ["Latitude location of institution (HD2020)"]
-    title = univ["instnm"]
     lons.append(lon)
     lats.append(lat)
     tot_e.append(tote)
-    m2.append(m_2)
     hover_texts.append(title)
+    m2.append(m_2)
 
 
 from plotly.graph_objs import Scattergeo, Layout
@@ -175,18 +175,18 @@ for school in list_of_univ:
 
 
 for univ in m3schools:
+    lon = univ["Longitude location of institution (HD2020)"]
+    lat = univ["Latitude location of institution (HD2020)"]
     tote = univ["Total  enrollment (DRVEF2020)"]
+    title = univ["instnm"]
     m_3 = univ[
         "Total price for in-state students living off campus (not with family)  2020-21 (DRVIC2020)"
     ]
-    lon = univ["Longitude location of institution (HD2020)"]
-    lat = univ["Latitude location of institution (HD2020)"]
-    title = univ["instnm"]
     lons.append(lon)
     lats.append(lat)
     tot_e.append(tote)
-    m3.append(m_3)
     hover_texts.append(title)
+    m3.append(m_3)
 
 
 from plotly.graph_objs import Scattergeo, Layout
